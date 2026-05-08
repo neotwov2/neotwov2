@@ -1,0 +1,12 @@
+# Hugo build output (Cloudflare regenerates fresh on every deploy)
+/public/
+/resources/
+.hugo_build.lock
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor noise
+.vscode/
+.idea/

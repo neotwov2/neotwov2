@@ -1,0 +1,93 @@
+baseURL = "https://ne0tw0.pt/"
+title = "Hugo Miranda"
+theme = "hugo-coder"
+locale = "en-us"
+
+defaultContentLanguage = "en"
+paginate = 20
+
+enableEmoji = true
+
+[markup.highlight]
+  style = "github-dark"
+  lineNos = false
+  codeFences = true
+  guessSyntax = true
+  tabWidth = 4
+
+[params]
+  author = "Hugo Miranda"
+  info = "SIEM Engineer · Detection Engineering · Blue Team"
+  description = "Notes from a SIEM engineer working detection engineering, incident response, and blue team operations in regulated financial services."
+  keywords = "siem,detection-engineering,blue-team,incident-response,qradar,sentinel,sigma,mitre-attack"
+
+  # Avatar shown in the hero section (path relative to /static)
+  avatarURL = "/images/avatar.png"
+
+  # Footer
+  footerContent = "ne0tw0.pt"
+
+  # Behavior
+  dateFormat = "Jan 2, 2006"
+  hideFooter = false
+  hideCredits = true
+  hideCopyright = false
+  since = 2026
+
+  # Color scheme: auto follows OS preference
+  colorScheme = "auto"
+  hidecolorschemetoggler = false
+
+  # Custom CSS files (we'll add one to tweak the cyberpunk accent)
+  customCSS = ["css/custom.css"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+# Social icons in the hero section
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/m1ran4a/"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/m1ran4a/"
+
+[[params.social]]
+  name = "Email"
+  icon = "fa-regular fa-envelope fa-2x"
+  weight = 3
+  url = "mailto:hugo.amiranda@ne0tw0.pt"
+
+[[params.social]]
+  name = "RSS"
+  icon = "fa-solid fa-rss fa-2x"
+  weight = 4
+  url = "/index.xml"
+  rel = "alternate"
+  type = "application/rss+xml"
+
+# Top navigation
+[[languages.en.menu.main]]
+  name = "About"
+  weight = 1
+  url = "about/"
+
+[[languages.en.menu.main]]
+  name = "Posts"
+  weight = 2
+  url = "posts/"
+
+[[languages.en.menu.main]]
+  name = "Tags"
+  weight = 3
+  url = "tags/"
+
+[languages.en]
+  label = "English"

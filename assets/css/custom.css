@@ -1,0 +1,26 @@
+/* Cyberpunk accent override for hugo-coder */
+:root {
+  /* Light mode accents */
+  --primary-color: #00b894;
+  --link-color: #00b894;
+  --link-color-visited: #008870;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode accents — slightly brighter for contrast */
+    --primary-color: #00ffa3;
+    --link-color: #00ffa3;
+    --link-color-visited: #00cc82;
+  }
+}
+
+/* Monospace headers for stronger cyberpunk feel */
+h1, h2, h3, h4 {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+}
+
+/* Tighter letter-spacing on the hero title */
+.about h1 {
+  letter-spacing: -0.02em;
+}
